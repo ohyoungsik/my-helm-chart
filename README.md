@@ -34,7 +34,7 @@ mkdir -p docs
 helm package charts/helm01_member -d docs/
 # index.yaml 파일을 docs/ 폴더에 생성하기
 helm repo index docs/ --url  https://<나의github아이디>.github.io/저장소의이름/
-helm repo index docs/ --url  https://dudtlr9308.github.io/my-helm-chart/
+helm repo index docs/ --url  https://ohyoungsik.github.io/my-helm-chart/
 
 git add ./docs
 git commit -m "release: member-app chart v1.0.0 package"
@@ -51,7 +51,7 @@ git push origin master
 
 ```bash
 # helm 저장소 등록 
-helm repo add my-repo https://dudtlr9308.github.io/my-helm-chart/
+helm repo add my-repo https://ohyoungsik.github.io/my-helm-chart/
 # helm 저장소 목록 확인
 helm repo ls
 # 업데이트 
@@ -85,7 +85,7 @@ appVersion: "1.0.1"
 # 우리가 만든 chart 를 압축해서 docs/ 폴더 안에 저장
 helm package charts/helm01_member -d docs/
 # index.yaml 파일을 docs/ 폴더에 생성하기
-helm repo index docs/ --url  https://dudtlr9308.github.io/my-helm-chart/
+helm repo index docs/ --url  https://ohyoungsik.github.io/my-helm-chart/
 git add ./docs
 git commit -m "release: member-app chart v1.0.1 package"
 git push origin master
