@@ -1,4 +1,5 @@
 replicaCount: 2
+containerPort: 8000
 
 image:
   repository: ohyoungsik/market-app

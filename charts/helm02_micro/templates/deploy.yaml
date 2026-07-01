@@ -1,23 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: market-app
+  name: {{ .Chart.Name }}
 spec:
-  replicas: 2
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: market-app
+      app: {{ .Chart.Name }}
   template:
     metadata:
       labels:
-        app: market-app
+        app: {{ .Chart.Name }}
     spec:
       containers:
-      - name: market-ctn
-        image: ohyoungsik/market-app:1.0
+      - name: "{{ .Chart.Name }}-ctn"
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
-        - containerPort: 8000
+        - containerPort: {{ .Values.containerPort }}
         resources:
           limits:
-            cpu: "200m"
-            memory: "64Mi"
+            cpu: {{ .Values.resources.limits.cpu | quote }}
+            memory: {{ .Values.resources.limits.memory | quote }}
+          requests:
+            cpu: {{ .Values.resources.requests.cpu | quote }}
+            memory: {{ .Values.resources.requests.memory | quote }}
