@@ -3,33 +3,33 @@ entries:
   market-app:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-01T09:50:17.376224031+09:00"
+    created: "2026-07-01T10:19:56.608841372+09:00"
     description: Market Application Helm Chart for Kubernetes
-    digest: b1d80076ec307bd11a061acdfb6ee6909e004a6fde3f43310da4a5bf135287b8
+    digest: b1a8b69307b9318951c9a9c37afa434903c952f0c7444e414c875642f873fdb9
     name: market-app
     type: application
     urls:
-    - https://dudtlr9308.io/my-helm-chart/market-app-0.1.0.tgz
+    - https://ohyoungsik.github.io/my-helm-chart/market-app-0.1.0.tgz
     version: 0.1.0
   member-app:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2026-07-01T09:50:17.376494279+09:00"
+    created: "2026-07-01T10:19:56.60911414+09:00"
     description: fastapi member application
     digest: fb27a0aa3e4e09fa359ee1565d7a744d4a2a3f99ea4639967033c5afc7da557b
     name: member-app
     type: application
     urls:
-    - https://dudtlr9308.io/my-helm-chart/member-app-0.1.1.tgz
+    - https://ohyoungsik.github.io/my-helm-chart/member-app-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-01T09:50:17.376368496+09:00"
+    created: "2026-07-01T10:19:56.608977323+09:00"
     description: fastapi member application
     digest: d1b3df7b02a2530b131e22fe1794919127e4ccbde35f464572fbea04cd9a59c8
     name: member-app
     type: application
     urls:
-    - https://dudtlr9308.io/my-helm-chart/member-app-0.1.0.tgz
+    - https://ohyoungsik.github.io/my-helm-chart/member-app-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-01T09:50:17.375967755+09:00"
+generated: "2026-07-01T10:19:56.608554253+09:00"
